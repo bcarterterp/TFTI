@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/find_names"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter a username" 
+            android:layout_weight="1"/>
+        
+        <Button
+        android:id="@+id/search_button"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:text="Search"
+        android:textSize="12sp"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:id="@+id/search_result"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/friend_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:src="@drawable/instagram_icon" />
+
+        <TextView
+            android:id="@+id/friend_id"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Name" />
+
+        <Button
+            android:id="@+id/add_and_remove_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corners"
+            android:text="Add" />
+    </LinearLayout>
+    
+    <ListView 
+        android:paddingTop="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:id="@+id/friends"
+        android:layout_weight="1"/>
+    
+    <Button
+        android:id="@+id/home_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/rounded_corners"
+        android:text="Home"/>
+
+</LinearLayout>

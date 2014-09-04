@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Event Name"
+        android:id="@+id/event_name"/>
+    
+    <ImageView 
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/event_picture"
+        />
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5/14/14 @ 4:00PM"
+        android:id="@+id/event_time"/>
+    
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:text="Short description...."
+        android:background="#66000000"
+        android:id="@+id/event_desc"/>
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        
+        <ImageView 
+            android:src="@drawable/beacon_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/beacon"/>
+        
+        <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Location Name"
+            android:id="@+id/location_name"
+            android:layout_toRightOf="@+id/beacon"
+            android:layout_toLeftOf="@+id/show_map"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Map"
+            android:id="@+id/show_map"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+        
+    </RelativeLayout>
+    
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="10 INVITED"
+        android:background="#FF5555"
+        android:id="@+id/number_invites"/>
+    
+    <Button 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corners"
+                android:text="Send Invites"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/send_invites"/>
+    
+</LinearLayout>

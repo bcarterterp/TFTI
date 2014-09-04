@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+    
+    <Button 
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corners"
+        android:text="Invites Created"
+        android:textColor="#FFFFFF"
+        android:id="@+id/invite_created_button"/>
+    
+    <Button 
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corners"
+        android:text="Invites Pending"
+        android:textColor="#FFFFFF"
+        android:id="@+id/invite_pending_button"/>
+    
+    <Button 
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corners"
+        android:text="Invites Accepted"
+        android:textColor="#FFFFFF"
+        android:id="@+id/invites_accepted_button"/>
+
+</LinearLayout>
