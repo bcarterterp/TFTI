@@ -72,8 +72,8 @@ public class UserLogin extends ActionBarActivity implements
 		super.onCreate(savedInstanceState);
 		
 		SharedPreferences preferences = this.getPreferences(0);
-		Parse.initialize(this, "YhQVvN059Op1smwAnikVPltmzgJtJxx7yUiw3Dpy", "NIUIst19OzMqY9KyX2SKdFZTzj5pkDMsKBQYTKwS");
-		ParseFacebookUtils.initialize("1501644853387300");
+		Parse.initialize();
+		ParseFacebookUtils.initialize();
 		current_user = ParseUser.getCurrentUser();
 		//ParseFacebookUtils.getSession().closeAndClearTokenInformation();
 		if(current_user != null){
