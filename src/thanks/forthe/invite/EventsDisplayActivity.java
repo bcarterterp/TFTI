@@ -78,7 +78,7 @@ public class EventsDisplayActivity extends ActionBarActivity implements
 
 		
 		
-		Parse.initialize(this, "YhQVvN059Op1smwAnikVPltmzgJtJxx7yUiw3Dpy", "NIUIst19OzMqY9KyX2SKdFZTzj5pkDMsKBQYTKwS");
+		Parse.initialize();
 
 		mNavigationDrawerFragment = (NavigationDrawerFragment) getSupportFragmentManager()
 				.findFragmentById(R.id.navigation_drawer);
