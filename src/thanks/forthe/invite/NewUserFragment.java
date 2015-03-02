@@ -58,7 +58,7 @@ public class NewUserFragment extends Fragment implements OnClickListener{
 	public void onCreate(Bundle savedInstanceState){
 		
 		super.onCreate(savedInstanceState);
-		Parse.initialize(this.getActivity(), "YhQVvN059Op1smwAnikVPltmzgJtJxx7yUiw3Dpy", "NIUIst19OzMqY9KyX2SKdFZTzj5pkDMsKBQYTKwS");
+		Parse.initialize();
 		userObject = new ParseUser();
 		main_activity = this.getActivity();
 
