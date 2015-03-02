@@ -101,7 +101,7 @@ public class LastNewEventFragment extends Fragment implements OnClickListener{
 	
 	public ParseObject createEvent(){
 		
-		Parse.initialize(getActivity(), "YhQVvN059Op1smwAnikVPltmzgJtJxx7yUiw3Dpy", "NIUIst19OzMqY9KyX2SKdFZTzj5pkDMsKBQYTKwS");
+		Parse.initialize();
 		ParseUser curr_user = ParseUser.getCurrentUser();
 		ParseObject new_event = new ParseObject("TFTIEvent");
 		ParseObject event_chat = new ParseObject("TFTIEventChat");
